@@ -184,7 +184,7 @@ export default function Header({ isScroll }: Props) {
                     href={subItem.url}
                     className="text-gray-200 hover:text-white hover:underline hover:font-bold hover:shadow-lg ease-in-out duration-300 transition-all"
                     key={item.id}
-                    onClick={() => toggleSubMenu(null)}
+                    target="_blank"
                   >
                     {subItem.name}
                   </Link>
@@ -203,7 +203,7 @@ export default function Header({ isScroll }: Props) {
       <div
         className={` ${
           isActive ? "flex absolute z-50" : "hidden"
-        } top-0 text-white right-0 flex-col bg-gradient-to-r from-purple-600 to-violet-600 gap-3 px-5 py-4 rounded-bl-xl w-60`}
+        } top-0 text-white text-shadow-lg/10 right-0 flex-col bg-gradient-to-r from-blue-400 to-cyan-400 gap-3 px-5 py-4 rounded-bl-xl w-60`}
       >
         <button onClick={() => setIsActive(!isActive)}>
           <ArrowRightFromLine />

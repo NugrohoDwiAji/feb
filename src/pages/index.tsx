@@ -123,7 +123,7 @@ export default function Home() {
     <div className="">
       {/* Banner */}
       <div className="bg-[url(/img/banner-feb.png)] h-[18rem] md:h-[31rem] lg:h-[40rem] bg-cover md:bg-center bg-right">
-        <div className="h-full w-full flex px-5 md:px-12 lg:px-20 items-center md:justify-between ">
+        <div className="leading-4.5 h-full w-full flex px-5 md:px-12 lg:px-20 items-center md:justify-between ">
           <div className="w-[50%] flex flex-col gap-2 -mt-9 md:-mt-20 lg:-mt-36">
             <h1 className=" font-bold text-white text-shadow-lg/30 md:text-2xl lg:text-4xl uppercase">
              <span className=""> {identitas?.find((item) => item.name === "Nama Fakultas")?.value}</span>
@@ -134,7 +134,7 @@ export default function Home() {
             </p>
             
             <a
-              className="mt-2 md:mt-5 border-2 bg-white text-cyan-400 px-4 py-2 md:px-6  rounded-lg hover:scale-105 hover:shadow-2xl shadow-lg ease-in-out duration-300 transition-all text-sm md:text-xl w-fit hover:cursor-pointer "
+              className=" md:mt-5 border-2 bg-white text-cyan-400 px-1 py-1 md:px-6 rounded-md md:rounded-lg hover:scale-105 hover:shadow-2xl shadow-lg ease-in-out duration-300 transition-all text-sm md:text-xl w-fit hover:cursor-pointer "
               href="https://pmb.universitasbumigora.ac.id/v.2019/daftar"
             >
               Daftar Sekarang
@@ -326,13 +326,13 @@ export default function Home() {
           alt="eror"
           className="h-20 md:h-32"
         />
-        <div className="h-32 w-[2px] bg-cyan-400 mx-2"></div>
-        <img
+        {/* <div className="h-32 w-[2px] bg-cyan-400 mx-2"></div> */}
+        {/* <img
           data-aos="zoom-in-down"
           src="/img/laminfokom.png"
           alt="eror"
           className=" h-24 md:h-32"
-        />
+        /> */}
       </div>
     </div>
   );

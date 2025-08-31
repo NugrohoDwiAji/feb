@@ -19,7 +19,7 @@ const createUploadDir = (dir: string) => {
 
 const handlePostMethod = async (req: NextApiRequest, res: NextApiResponse) => {
 
-  const uploadPath = "/home/pasca/uploads/pengumuman";
+  const uploadPath = "/home/feb/uploads/pengumuman";
   createUploadDir(uploadPath);
 
   const form = formidable({

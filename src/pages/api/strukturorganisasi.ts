@@ -18,7 +18,7 @@ const createUploadDir = (dir: string) => {
 };
 
 const handlePutMethod = async (req: NextApiRequest, res: NextApiResponse) => {
-  const uploadPath = "/home/pasca/uploads/img";
+  const uploadPath = "/home/feb/uploads/img";
 
   createUploadDir(uploadPath);
 

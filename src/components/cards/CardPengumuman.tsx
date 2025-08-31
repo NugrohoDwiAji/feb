@@ -22,13 +22,13 @@ export default function CardPengumuman({ title, file_path, uploadat}: Props) {
     <div  data-aos="flip-left"
      data-aos-easing="ease-out-cubic"
      data-aos-duration="2000" 
-     className="bg-white text-gray-800 h-fit fit md:w-80 shadow-2xl rounded-lg ">
+     className="bg-white text-cyan-400 h-fit fit md:w-80 shadow-2xl rounded-lg ">
       <h1 className="p-3 text-lg text-center font-bold">{title}</h1>
-      <hr className="border-t-2 border-gray-800 w-full" />
+      <hr className="border-t-2 border-cyan-400 w-full" />
       <div className="flex gap-2 justify-center items-center h-1/2 px-4 py-2">
         <h2 className="font-semibold ">{uploadat=format(new Date(uploadat), "yyyy-MM-dd")}</h2>
-        <div className="h-9 w-[2px] bg-blue-950"></div>
-        <a href={file_path} download={title} className="py-2 px-4 rounded-lg hover:scale-105 ease-in-out duration-300 bg-blue-950 hover:bg-white hover:text-blue-950 hover:border-2 hover:border-blue-950 text-white">Unduh</a>
+        <div className="h-9 w-[2px] bg-cyan-400"></div>
+        <a href={file_path} download={title} className="py-2 px-4 rounded-lg hover:scale-105 ease-in-out duration-300 bg-cyan-400 hover:bg-white hover:text-cyan-400 hover:border-2 hover:border-cyan-400 text-white">Unduh</a>
       </div>
     </div>
   );
